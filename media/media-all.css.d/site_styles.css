@@ -14,6 +14,8 @@
   border-radius: $(border_radius_accent);
 }
 
-#body-2col-extra {
-  flex-basis: 50em !important;
+div#body-2col-extra {
+  flex-basis: 20em;
+  max-width: 25em;
+  min-width: 20em;
 }
