@@ -4,134 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "668d85c8d48fbdd94e31aa03433509fe",
+    "content-hash": "0297e94385a73334a0aeaf8d3b078404",
     "packages": [
-        {
-            "name": "bacon/bacon-qr-code",
-            "version": "2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Bacon/BaconQrCode.git",
-                "reference": "f73543ac4e1def05f1a70bcd1525c8a157a1ad09"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/f73543ac4e1def05f1a70bcd1525c8a157a1ad09",
-                "reference": "f73543ac4e1def05f1a70bcd1525c8a157a1ad09",
-                "shasum": ""
-            },
-            "require": {
-                "dasprid/enum": "^1.0.3",
-                "ext-iconv": "*",
-                "php": "^7.1 || ^8.0"
-            },
-            "require-dev": {
-                "phly/keep-a-changelog": "^1.4",
-                "phpunit/phpunit": "^7 | ^8 | ^9",
-                "squizlabs/php_codesniffer": "^3.4"
-            },
-            "suggest": {
-                "ext-imagick": "to generate QR code images"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "BaconQrCode\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Ben Scholzen 'DASPRiD'",
-                    "email": "mail@dasprids.de",
-                    "homepage": "https://dasprids.de/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "BaconQrCode is a QR code generator for PHP.",
-            "homepage": "https://github.com/Bacon/BaconQrCode",
-            "support": {
-                "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
-            },
-            "time": "2021-06-18T13:26:35+00:00"
-        },
-        {
-            "name": "box/spout",
-            "version": "v3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/box/spout.git",
-                "reference": "7964dadc2128f3a00ffa393395b618ea115c8032"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/box/spout/zipball/7964dadc2128f3a00ffa393395b618ea115c8032",
-                "reference": "7964dadc2128f3a00ffa393395b618ea115c8032",
-                "shasum": ""
-            },
-            "require": {
-                "ext-xmlreader": "*",
-                "ext-zip": "*",
-                "php": ">=7.1.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2",
-                "phpunit/phpunit": "^7"
-            },
-            "suggest": {
-                "ext-iconv": "To handle non UTF-8 CSV files (if \"php-intl\" is not already installed or is too limited)",
-                "ext-intl": "To handle non UTF-8 CSV files (if \"iconv\" is not already installed)"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Box\\Spout\\": "src/Spout"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Adrien Loison",
-                    "email": "adrien@box.com"
-                }
-            ],
-            "description": "PHP Library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way",
-            "homepage": "https://www.github.com/box/spout",
-            "keywords": [
-                "OOXML",
-                "csv",
-                "excel",
-                "memory",
-                "odf",
-                "ods",
-                "office",
-                "open",
-                "php",
-                "read",
-                "scale",
-                "spreadsheet",
-                "stream",
-                "write",
-                "xlsx"
-            ],
-            "support": {
-                "issues": "https://github.com/box/spout/issues",
-                "source": "https://github.com/box/spout/tree/v3.1.0"
-            },
-            "time": "2019-12-02T21:21:41+00:00"
-        },
         {
             "name": "byjoby/destructr",
             "version": "v1.5.0-beta.6",
@@ -171,6 +45,47 @@
                 "source": "https://github.com/jobyone/destructr/tree/v1.5.0-beta.6"
             },
             "time": "2020-09-22T15:28:54+00:00"
+        },
+        {
+            "name": "byjoby/digraph-pdf",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digraph-cms/digraph-pdf-module.git",
+                "reference": "1aec32d7b1624d1e478eb5dd8996eb865c10889b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digraph-cms/digraph-pdf-module/zipball/1aec32d7b1624d1e478eb5dd8996eb865c10889b",
+                "reference": "1aec32d7b1624d1e478eb5dd8996eb865c10889b",
+                "shasum": ""
+            },
+            "require": {
+                "mpdf/mpdf": "^7.1"
+            },
+            "default-branch": true,
+            "type": "digraph-module",
+            "autoload": {
+                "psr-4": {
+                    "Digraph\\Modules\\digraph_pdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joby Elliott",
+                    "email": "joby@byjoby.com"
+                }
+            ],
+            "description": "Digraph module to provide PDF versions of pages and content. Also designed to allow custom PDF generation using mPDF.",
+            "support": {
+                "issues": "https://github.com/digraph-cms/digraph-pdf-module/issues",
+                "source": "https://github.com/digraph-cms/digraph-pdf-module/tree/main"
+            },
+            "time": "2020-09-03T14:12:13+00:00"
         },
         {
             "name": "byjoby/flatrr",
@@ -311,55 +226,6 @@
                 "source": "https://github.com/jobyone/html-object-strings/tree/main"
             },
             "time": "2021-01-21T15:34:05+00:00"
-        },
-        {
-            "name": "byjoby/image-transform",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jobyone/image-transform.git",
-                "reference": "a92ab71dfdc5616b5de4ccce693400c0554e2d5c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jobyone/image-transform/zipball/a92ab71dfdc5616b5de4ccce693400c0554e2d5c",
-                "reference": "a92ab71dfdc5616b5de4ccce693400c0554e2d5c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-gd": "*",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "atoum/atoum": "^3.4",
-                "atoum/stubs": "^2.6"
-            },
-            "suggest": {
-                "ext-gmagick": "to use the Gmagick implementation",
-                "ext-imagick": "to use the Imagick implementation"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ByJoby\\ImageTransform\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joby Elliott",
-                    "email": "joby@byjoby.com"
-                }
-            ],
-            "description": "A tightly-focused library for performing a very limited set of simple image transformations. This library's purpose is to eschew the standard kitchen sink approach to PHP image libraries in favor of high performance, wide driver support, and a dead simple API.",
-            "support": {
-                "issues": "https://github.com/jobyone/image-transform/issues",
-                "source": "https://github.com/jobyone/image-transform/tree/v0.1.1"
-            },
-            "time": "2020-10-16T20:01:00+00:00"
         },
         {
             "name": "byjoby/sesh",
@@ -672,51 +538,42 @@
             "time": "2015-07-30T08:37:14+00:00"
         },
         {
-            "name": "dasprid/enum",
-            "version": "1.0.3",
+            "name": "digraphcms/digraph-blocks",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DASPRiD/Enum.git",
-                "reference": "5abf82f213618696dda8e3bf6f64dd042d8542b2"
+                "url": "https://github.com/digraph-cms/digraph-blocks-module.git",
+                "reference": "a8b6d65febe680aadc8d756b2a1830df39924a98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DASPRiD/Enum/zipball/5abf82f213618696dda8e3bf6f64dd042d8542b2",
-                "reference": "5abf82f213618696dda8e3bf6f64dd042d8542b2",
+                "url": "https://api.github.com/repos/digraph-cms/digraph-blocks-module/zipball/a8b6d65febe680aadc8d756b2a1830df39924a98",
+                "reference": "a8b6d65febe680aadc8d756b2a1830df39924a98",
                 "shasum": ""
             },
-            "require-dev": {
-                "phpunit/phpunit": "^7 | ^8 | ^9",
-                "squizlabs/php_codesniffer": "^3.4"
-            },
-            "type": "library",
+            "default-branch": true,
+            "type": "digraph-module",
             "autoload": {
                 "psr-4": {
-                    "DASPRiD\\Enum\\": "src/"
+                    "Digraph\\Modules\\Blocks\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-2-Clause"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Ben Scholzen 'DASPRiD'",
-                    "email": "mail@dasprids.de",
-                    "homepage": "https://dasprids.de/",
-                    "role": "Developer"
+                    "name": "Joby Elliott",
+                    "email": "joby@byjoby.com"
                 }
             ],
-            "description": "PHP 7.1 enum implementation",
-            "keywords": [
-                "enum",
-                "map"
-            ],
+            "description": "Digraph module to provide blocks for placing content within templates.",
             "support": {
-                "issues": "https://github.com/DASPRiD/Enum/issues",
-                "source": "https://github.com/DASPRiD/Enum/tree/1.0.3"
+                "issues": "https://github.com/digraph-cms/digraph-blocks-module/issues",
+                "source": "https://github.com/digraph-cms/digraph-blocks-module/tree/main"
             },
-            "time": "2020-10-02T16:03:48+00:00"
+            "time": "2020-07-22T16:58:16+00:00"
         },
         {
             "name": "digraphcms/digraph-core",
@@ -862,6 +719,44 @@
                 "source": "https://github.com/digraph-cms/digraph-core-types/tree/main"
             },
             "time": "2020-10-06T19:06:52+00:00"
+        },
+        {
+            "name": "digraphcms/digraph-file-types",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digraph-cms/digraph-file-types.git",
+                "reference": "ac448c316415e8fd5ced7f7850b8eaa50fb07a30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digraph-cms/digraph-file-types/zipball/ac448c316415e8fd5ced7f7850b8eaa50fb07a30",
+                "reference": "ac448c316415e8fd5ced7f7850b8eaa50fb07a30",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "digraph-module",
+            "autoload": {
+                "psr-4": {
+                    "Digraph\\Modules\\FileTypes\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joby Elliott",
+                    "email": "joby@byjoby.com"
+                }
+            ],
+            "description": "Digraph module to provide Noun types for serving files and bundles of files.",
+            "support": {
+                "issues": "https://github.com/digraph-cms/digraph-file-types/issues",
+                "source": "https://github.com/digraph-cms/digraph-file-types/tree/main"
+            },
+            "time": "2019-07-23T23:23:10+00:00"
         },
         {
             "name": "digraphcms/digraph-project-core",
@@ -1357,6 +1252,137 @@
             "time": "2016-05-11T00:19:07+00:00"
         },
         {
+            "name": "mpdf/mpdf",
+            "version": "v7.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpdf/mpdf.git",
+                "reference": "a0fc1215d2306aa3b4ba6e97bd6ebe4bab6a88fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpdf/mpdf/zipball/a0fc1215d2306aa3b4ba6e97bd6ebe4bab6a88fb",
+                "reference": "a0fc1215d2306aa3b4ba6e97bd6ebe4bab6a88fb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "myclabs/deep-copy": "^1.7",
+                "paragonie/random_compat": "^1.4|^2.0|9.99.99",
+                "php": "^5.6 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0",
+                "psr/log": "^1.0",
+                "setasign/fpdi": "1.6.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^5.0",
+                "squizlabs/php_codesniffer": "^2.7.0",
+                "tracy/tracy": "^2.4"
+            },
+            "suggest": {
+                "ext-bcmath": "Needed for generation of some types of barcodes",
+                "ext-xml": "Needed mainly for SVG manipulation",
+                "ext-zlib": "Needed for compression of embedded resources, such as fonts"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-development": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mpdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Matěj Humpál",
+                    "role": "Developer, maintainer"
+                },
+                {
+                    "name": "Ian Back",
+                    "role": "Developer (retired)"
+                }
+            ],
+            "description": "PHP library generating PDF files from UTF-8 encoded HTML",
+            "homepage": "https://mpdf.github.io",
+            "keywords": [
+                "pdf",
+                "php",
+                "utf-8"
+            ],
+            "support": {
+                "docs": "http://mpdf.github.io",
+                "issues": "https://github.com/mpdf/mpdf/issues",
+                "source": "https://github.com/mpdf/mpdf"
+            },
+            "time": "2019-02-06T13:32:19+00:00"
+        },
+        {
+            "name": "myclabs/deep-copy",
+            "version": "1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/DeepCopy.git",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "replace": {
+                "myclabs/deep-copy": "self.version"
+            },
+            "require-dev": {
+                "doctrine/collections": "^1.0",
+                "doctrine/common": "^2.6",
+                "phpunit/phpunit": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeepCopy\\": "src/DeepCopy/"
+                },
+                "files": [
+                    "src/DeepCopy/deep_copy.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Create deep copies (clones) of your objects",
+            "keywords": [
+                "clone",
+                "copy",
+                "duplicate",
+                "object",
+                "object graph"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/DeepCopy/issues",
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.2"
+            },
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-13T09:40:50+00:00"
+        },
+        {
             "name": "oomphinc/composer-installers-extender",
             "version": "2.0.0",
             "source": {
@@ -1412,6 +1438,56 @@
                 "source": "https://github.com/oomphinc/composer-installers-extender/tree/2.0.0"
             },
             "time": "2020-08-11T21:06:11+00:00"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.99",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "polyfill",
+                "pseudorandom",
+                "random"
+            ],
+            "support": {
+                "email": "info@paragonie.com",
+                "issues": "https://github.com/paragonie/random_compat/issues",
+                "source": "https://github.com/paragonie/random_compat"
+            },
+            "time": "2018-07-02T15:55:56+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -1716,6 +1792,59 @@
                 }
             ],
             "time": "2021-07-09T00:30:39+00:00"
+        },
+        {
+            "name": "setasign/fpdi",
+            "version": "1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Setasign/FPDI.git",
+                "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+                "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+                "shasum": ""
+            },
+            "suggest": {
+                "setasign/fpdf": "FPDI will extend this class but as it is also possible to use \"tecnickcom/tcpdf\" as an alternative there's no fixed dependency configured.",
+                "setasign/fpdi-fpdf": "Use this package to automatically evaluate dependencies to FPDF.",
+                "setasign/fpdi-tcpdf": "Use this package to automatically evaluate dependencies to TCPDF."
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "filters/",
+                    "fpdi.php",
+                    "fpdf_tpl.php",
+                    "fpdi_pdf_parser.php",
+                    "pdf_context.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Slabon",
+                    "email": "jan.slabon@setasign.com",
+                    "homepage": "https://www.setasign.com"
+                }
+            ],
+            "description": "FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF. Because it is also possible to use FPDI with TCPDF, there are no fixed dependencies defined. Please see suggestions for packages which evaluates the dependencies automatically.",
+            "homepage": "https://www.setasign.com/fpdi",
+            "keywords": [
+                "fpdf",
+                "fpdi",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/Setasign/FPDI/issues",
+                "source": "https://github.com/Setasign/FPDI/tree/master"
+            },
+            "time": "2017-05-11T14:25:49+00:00"
         },
         {
             "name": "soundasleep/html2text",
@@ -2554,11 +2683,17 @@
         },
         {
             "name": "unmous/ous_digraph_module",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "https://lobogit.unm.edu/ous/ous_digraph_module.git",
+                "url": "https://github.com/UNM-OUS/ous_digraph_module.git",
                 "reference": "79408880e0ddd73b255ad72b09b3344479d9c7d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/UNM-OUS/ous_digraph_module/zipball/79408880e0ddd73b255ad72b09b3344479d9c7d3",
+                "reference": "79408880e0ddd73b255ad72b09b3344479d9c7d3",
+                "shasum": ""
             },
             "require": {
                 "jasig/phpcas": "^1.3"
@@ -2570,75 +2705,21 @@
                     "Digraph\\Modules\\ous_digraph_module\\": "src/"
                 }
             },
+            "support": {
+                "source": "https://github.com/UNM-OUS/ous_digraph_module/tree/main",
+                "issues": "https://github.com/UNM-OUS/ous_digraph_module/issues"
+            },
             "time": "2021-08-09T17:02:34+00:00"
-        },
-        {
-            "name": "unmous/ous_event_integration",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://lobogit.unm.edu/ous/ous_event_integration.git",
-                "reference": "fa1999efd561b8311bc977b130bb4d49f1042442"
-            },
-            "require": {
-                "jasig/phpcas": "^1.3"
-            },
-            "default-branch": true,
-            "type": "digraph-module",
-            "autoload": {
-                "psr-4": {
-                    "Digraph\\Modules\\ous_event_integration\\": "src/"
-                }
-            },
-            "time": "2020-08-07T15:38:34+00:00"
-        },
-        {
-            "name": "unmous/ous_event_management",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://lobogit.unm.edu/ous/ous_event_management.git",
-                "reference": "73418b6edd8daf3b45a7301525cd69caca6d4452"
-            },
-            "require": {
-                "box/spout": "^3.1",
-                "byjoby/image-transform": "^0.1.1"
-            },
-            "default-branch": true,
-            "type": "digraph-module",
-            "autoload": {
-                "psr-4": {
-                    "Digraph\\Modules\\ous_event_management\\": "src/"
-                }
-            },
-            "time": "2021-07-06T14:23:11+00:00"
-        },
-        {
-            "name": "unmous/ous_event_regalia",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://lobogit.unm.edu/ous/ous_event_regalia.git",
-                "reference": "d5206e2571687ae27633162b004202cfc26768bf"
-            },
-            "default-branch": true,
-            "type": "digraph-module",
-            "autoload": {
-                "psr-4": {
-                    "Digraph\\Modules\\ous_event_regalia\\": "src/"
-                }
-            },
-            "time": "2021-07-26T15:52:45+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "unmous/ous_digraph_module": 20,
-        "unmous/ous_event_integration": 20,
-        "unmous/ous_event_management": 20,
-        "unmous/ous_event_regalia": 20
+        "byjoby/digraph-pdf": 20,
+        "digraphcms/digraph-blocks": 20,
+        "digraphcms/digraph-file-types": 20,
+        "unmous/ous_digraph_module": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -2647,5 +2728,5 @@
     "platform-overrides": {
         "php": "7.1.33"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

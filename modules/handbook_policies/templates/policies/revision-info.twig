@@ -1,0 +1,73 @@
+<div class="revision-info digraph-card" style="font-size:0.8em;">
+
+    {% if showParent %}
+      <strong>{{noun.parent.url.html|raw}}</strong><br>
+      {% if showLink %}
+        {{noun.url.html|raw}}
+      {% else %}
+        {{noun.name}}
+      {% endif %}
+    {% else %}
+      <strong>
+      {% if showLink %}
+        {{noun.url.html|raw}}
+      {% else %}
+        {{noun.name}}
+      {% endif %}
+      </strong>
+    {% endif %}
+
+  <p class="incidental">
+
+    {% if noun.policy.minor_revision %}
+      {% if showType %}
+        <i class='fas fa-wrench'></i> Minor/maintenance revision
+      {% endif %}
+    {% else %}
+      {% if showType %}
+        <i class='fa fa-star'></i> Official revision
+      {% endif %}
+      {% if noun.policy.approval.by %}
+        {% if showType %}<br>{% endif %}
+        Approved by {{noun.policy.approval.by}}
+      {% endif %}
+    {% endif %}
+
+    {% if showDate %}
+      <br>{{cms.helper('strings').dateHTML(noun.effectiveDate())|raw}}
+    {% endif %}
+
+  </p>
+
+  {% if showSummary and noun.policySummary %}
+      <div class="incidental">{{noun.policySummary|raw}}</div>
+  {% endif %}
+
+  {% if cms.helper('filestore').list(noun, 'memo') %}
+    <ul class="incidental">
+        {% for file in cms.helper('filestore').list(noun, 'memo') %}
+          <li>
+            <a href="{{file.url|raw}}">
+              {{file.icon|raw}}&nbsp;{{file.name}}
+            </a>
+          </li>
+        {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if showCurrent %}
+    {% if noun.parent().currentVersion().dso.id != noun.dso.id %}
+      <p class="incidental">
+        <strong>
+          This not the current revision of this policy. View the latest revision at:<br>
+          {{noun.parent().currentVersion().url.html|raw}}.
+        </strong>
+      </p>
+    {% else %}
+      <p class="incidental">
+        <strong>This is the current revision of this policy.</strong>
+      </p>
+    {% endif %}
+  {% endif %}
+
+</div>
