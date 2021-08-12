@@ -1,0 +1,29 @@
+tr.minor-revision {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+tr.minor-revision a.revision-link {
+    color: inherit;
+}
+
+tr a.revision-link i {
+    width: 1.5rem;
+    font-size: 1rem;
+}
+
+article {
+
+    &.type_policy,
+    &.type_policy-revision {
+
+        ul,
+        ol {
+            li {
+                margin-top: $(spacing_base);
+                margin-bottom: $(spacing_base);
+                padding-left: $(spacing_base);
+            }
+        }
+    }
+}

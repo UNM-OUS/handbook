@@ -1,0 +1,15 @@
+#unm_search_form {
+  display: none !important;
+}
+
+.indented {
+  padding-left: 2em;
+}
+
+.policyinfo {
+  background: #E7CBA6;
+  border: 1px solid #d6a461;
+  padding: 10pt;
+  margin: $(spacing_base) 0;
+  border-radius: $(border_radius_accent);
+}

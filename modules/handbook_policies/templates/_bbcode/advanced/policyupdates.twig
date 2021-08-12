@@ -1,0 +1,12 @@
+<div class="policy-updates">
+  {% for update in cms.helper('policies').officialUpdates() %}
+
+    {% if date != cms.helper('strings').date(update.policy.approval.date) %}
+      {% set date = cms.helper('strings').date(update.policy.approval.date) %}
+      <h2>{{date|raw}}</h2>
+    {% endif %}
+
+    {% include 'policies/revision-info.twig' with {noun: update, showDate: false, showParent: true, showType: false, showLink: true} %}
+
+  {% endfor %}
+</div>

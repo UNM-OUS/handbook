@@ -1,18 +1,21 @@
 {
-    "name": "unmous/graduation.unm.edu",
+    "name": "unmous/faculty-handbook",
     "type": "project",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/UNM-OUS/ous_digraph_module.git"
+        }
+    ],
     "require": {
-        "bacon/bacon-qr-code": "^2.0",
-        "box/spout": "^3.1",
-        "byjoby/image-transform": "^0.1.1",
+        "byjoby/digraph-pdf": "dev-main",
+        "digraphcms/digraph-blocks": "dev-main",
+        "digraphcms/digraph-file-types": "dev-main",
         "digraphcms/digraph-project-core": "~1",
         "oomphinc/composer-installers-extender": "^1.1|^2",
-        "unmous/ous_digraph_module": "dev-master",
-        "unmous/ous_event_integration": "dev-master",
-        "unmous/ous_event_management": "dev-main",
-        "unmous/ous_event_regalia": "dev-main"
+        "unmous/ous_digraph_module": "dev-main"
     },
     "autoload": {
         "classmap": [
@@ -51,23 +54,5 @@
         "post-update-cmd": [
             "DigraphProject\\Scripts\\Composer::updateHandler"
         ]
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://lobogit.unm.edu/ous/ous_digraph_module.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://lobogit.unm.edu/ous/ous_event_integration.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://lobogit.unm.edu/ous/ous_event_management.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://lobogit.unm.edu/ous/ous_event_regalia.git"
-        }
-    ]
+    }
 }

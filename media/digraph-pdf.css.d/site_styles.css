@@ -1,0 +1,13 @@
+.indented {
+  padding-left: 2em;
+}
+
+.policyinfo {
+  background: #E7CBA6;
+  border: 1px solid #d6a461;
+  padding: 5pt;
+  margin: $(spacing_base) 0;
+  border-radius: $(border_radius_accent);
+  break-inside: avoid;
+  break-after: avoid;
+}

@@ -1,0 +1,20 @@
+<div class="policy-comments">
+
+  <h2>Current comment periods</h2>
+  {% for p in cms.helper('policies').commentsCurrent() %}
+
+    <div class="digraph-card">
+      <h3><a href="{{p.url}}">{{p.name()}}</a></h3>
+      {{p.body()|raw}}
+    </div>
+
+  {% endfor %}
+
+  <h2>Past comment periods</h2>
+  <ul>
+  {% for p in cms.helper('policies').commentsPast() %}
+    <li>{{p.url().html()|raw}}</li>
+  {% endfor %}
+  </ul>
+
+</div>
