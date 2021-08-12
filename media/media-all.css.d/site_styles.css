@@ -13,3 +13,7 @@
   margin: $(spacing_base) 0;
   border-radius: $(border_radius_accent);
 }
+
+#body-2col-extra {
+  flex-basis: 50em !important;
+}
