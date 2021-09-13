@@ -1,0 +1,76 @@
+{
+  "package": {
+    "defaults": {
+      "response": {
+        "ttl": 28800
+      },
+      "fields": {
+        "site_name": "Faculty Handbook"
+      }
+    }
+  },
+  "slugs": {
+    "allow_ambiguity": true
+  },
+  "actions": {
+    "uiforguests": false
+  },
+  "timezone": "America/Denver",
+  "image": {
+    "driver": "gd"
+  },
+  "permissions": {
+    "url": {
+      "_public/*": [
+        "allow all"
+      ]
+    },
+    "add": {
+      "*/link-rule": [
+        "deny all",
+        "allow group admin"
+      ]
+    },
+    "filter": {
+      "unsafe": [
+        "allow group editor"
+      ],
+      "preset/markdown-unsafe": [
+        "allow group editor"
+      ]
+    }
+  },
+  "navigation": {
+    "parents": {
+      "common": {
+        "_public/allupdates": "policy-updates"
+      }
+    }
+  },
+  "strings": {
+    "urls": {
+      "common": {
+        "_public/allupdates": "All recently-added policy updates"
+      }
+    }
+  },
+  "types": {
+    "content": {
+      "file-bundle": "\\Digraph\\Modules\\FileTypes\\FileBundle",
+      "file": "\\Digraph\\Modules\\FileTypes\\File"
+    }
+  },
+  "theme": {
+    "variables": {
+      "_override": {
+        "color_accent": "#ba0c2f"
+      }
+    }
+  },
+  "templates": {
+    "theme": [
+      "unm-v1-2col",
+      "unm-v1"
+    ]
+  }
+}
